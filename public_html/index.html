@@ -61,9 +61,17 @@
 		xhttp.open("GET", "/api/featureflag", true);
 		xhttp.onload = function () {
 			if (xhttp.readyState === xhttp.DONE) {
-				if (xhttp.responseText == "true") {
+				if (xhttp.responseText == "US") {
 					var a = document.getElementById("featureflag");
-					a.innerHTML = "feature.io";
+					a.innerHTML = "US.io";
+				}
+				else if (xhttp.responseText == "NC") {
+					var a = document.getElementById("featureflag");
+					a.innerHTML = "NC.io";
+				}
+				if (xhttp.responseText == "Rest") {
+					var a = document.getElementById("featureflag");
+					a.innerHTML = "RestOfWorld.io";
 				}
 			}
 		}
