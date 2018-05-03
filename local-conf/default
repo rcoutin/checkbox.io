@@ -1,6 +1,6 @@
 server {
   listen 80;
-  root /usr/src/app/public_html/;
+  root {{cb_path}}/public_html/;
   index index.html index.htm;
 
   location / {
