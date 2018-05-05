@@ -9,7 +9,7 @@ var express = require('express'),
 	admin = require('./routes/admin.js');
 	
 var redis = require('redis')
-var client = redis.createClient(6379, '206.189.177.13', {})
+var client = redis.createClient(6379, '206.189.196.215', {})
 
 var app = express();
 
